@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Home Geofence Alerts",
+    "slug": "home-geofence-alerts",
+    "newArchEnabled": true,
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Home Geofence Alerts to use your location while you use the app.",
+          "locationAlwaysAndWhenInUsePermission": "Allow Home Geofence Alerts to use your location so it can notify you when you arrive home.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true
+        }
+      ],
+      "expo-notifications",
+      "@maplibre/maplibre-react-native"
+    ],
+    "android": {
+      "package": "com.sawzw.homegeofencealerts",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_LOCATION"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "597cb088-50c4-4342-aebb-ae78be804a11"
+      }
+    }
+  }
+}
